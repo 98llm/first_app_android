@@ -1657,6 +1657,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search
+drawable ic_update
 drawable login_img
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
@@ -2104,6 +2105,7 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id update
 id useLogo
 id view_offset_helper
 id visible
