@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         val username = editText.text.toString()
 
         if( username == "aluno" && password == "impacta") {
-            val intent = Intent(this, DisplayMessageActivity::class.java).apply {
+            val intent = Intent(this, HomeScreen::class.java).apply {
                 putExtra(EXTRA_MESSAGE, username)
             }
             startActivity(intent)

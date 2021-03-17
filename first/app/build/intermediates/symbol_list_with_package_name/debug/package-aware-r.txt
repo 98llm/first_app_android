@@ -1656,6 +1656,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_search
 drawable login_img
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
@@ -1903,6 +1904,7 @@ id line3
 id linear
 id listMode
 id list_item
+id logout
 id masked
 id material_clock_display
 id material_clock_face
@@ -2005,6 +2007,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id search
 id search_badge
 id search_bar
 id search_button
@@ -2018,6 +2021,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id settings
 id shortcut
 id showCustom
 id showHome
@@ -2252,6 +2256,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -2303,6 +2308,7 @@ string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string logout
 string material_clock_display_divider
 string material_clock_toggle_content_description
 string material_hour_selection
@@ -2358,7 +2364,9 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string search
 string search_menu_title
+string settings
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

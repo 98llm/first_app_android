@@ -5,5 +5,8 @@
     <string name="edit_password">Senha</string>
     <string name="edit_button">Login</string>
     <string name="classroom_img">imagem sala</string>
+    <string name="settings">Configurações</string>
+    <string name="logout">Sair</string>
+    <string name="search">search</string>
 
 </resources>

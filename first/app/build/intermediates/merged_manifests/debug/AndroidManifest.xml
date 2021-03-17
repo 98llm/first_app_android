@@ -30,7 +30,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.myfirstapp.DisplayMessageActivity"
+            android:name="com.example.myfirstapp.HomeScreen"
             android:parentActivityName="com.example.myfirstapp.MainActivity" >
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
