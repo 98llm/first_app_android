@@ -1,5 +1,6 @@
 package com.example.myfirstapp
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
 import android.os.Bundle
@@ -23,44 +24,40 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val editText = findViewById<EditText>(R.id.edit_user)
         val cardView = findViewById<CardView>(R.id.cardView_login)
         val layout = findViewById<ConstraintLayout>(R.id.constraint_layout_login)
         val progressBar = findViewById<ProgressBar>(R.id.progressBar2)
         val textView = findViewById<TextView>(R.id.textView)
         val intent = Intent(this, HomeScreen::class.java)
-        val username = editText.text.toString()
-        val editPassword = findViewById<EditText>(R.id.editTextPassword)
-        val password = editPassword.text.toString()
+
+
 
         fun buttonActivated() {
             progressBar.visibility = View.VISIBLE
             textView.text = "Aguarde..."
         }
 
-        fun buttonFinished(username: String) {
+        fun buttonFinished(username:String, password:String) {
+            val params = Bundle()
+            params.putString("username", username)
+            intent.putExtras(params)
             layout.setBackgroundColor(cardView.resources.getColor(R.color.green))
             progressBar.visibility = View.GONE
             textView.text = "Pronto!"
-            startActivity(intent.).apply {
-                putExtra(username)}
+            startActivity(intent)
         }
 
-
         finalButton.setOnClickListener {
-            val editPassword = findViewById<EditText>(R.id.editTextPassword)
-            val password = editPassword.text.toString()
+            val password = editTextPassword.text.toString()
+            val username = edit_user.text.toString()
 
             if (username == "aluno" && password == "impacta") {
-
                 Handler().postDelayed({
 
-                    // Chama funcao que finaliza o botão
-                    buttonFinished(username)
-                    //Altera a Activity
+                    buttonFinished(username, password)
 
                 }, 1500)
-                // Chama funcao que Ativa o botão
+
                 buttonActivated()
 
                 Handler().postDelayed({
@@ -68,10 +65,9 @@ class MainActivity : AppCompatActivity() {
                     this.recreate()
 
                 }, 1700)
-            } else {
-                Toast.makeText(this, "Usuário ou senha incorretos", Toast.LENGTH_SHORT).show()
             }
-
         }
+
     }
 }
+
