@@ -8,12 +8,12 @@
         "source": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\AC2\\first_app_android\\first\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\AC2\\first_app_android\\first\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_edittext.xml.flat",
-        "source": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\AC2\\first_app_android\\first\\app\\src\\main\\res\\drawable\\bg_edittext.xml"
-    },
-    {
         "merged": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\AC2\\first_app_android\\first\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\AC2\\first_app_android\\first\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\AC2\\first_app_android\\first\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_edittext.xml.flat",
+        "source": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\AC2\\first_app_android\\first\\app\\src\\main\\res\\drawable\\bg_edittext.xml"
     },
     {
         "merged": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\AC2\\first_app_android\\first\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
@@ -40,12 +40,16 @@
         "source": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\AC2\\first_app_android\\first\\app\\src\\main\\res\\layout\\activity_display_message.xml"
     },
     {
+        "merged": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\AC2\\first_app_android\\first\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\AC2\\first_app_android\\first\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
         "merged": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\AC2\\first_app_android\\first\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\AC2\\first_app_android\\first\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\AC2\\first_app_android\\first\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\AC2\\first_app_android\\first\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\AC2\\first_app_android\\first\\app\\build\\intermediates\\res\\merged\\debug\\layout_progressbar_layout.xml.flat",
+        "source": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\AC2\\first_app_android\\first\\app\\src\\main\\res\\layout\\progressbar_layout.xml"
     },
     {
         "merged": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\AC2\\first_app_android\\first\\app\\build\\intermediates\\res\\merged\\debug\\drawable_classroom.png.flat",
