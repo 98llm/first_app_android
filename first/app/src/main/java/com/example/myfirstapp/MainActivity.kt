@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
             textView.text = "Aguarde..."
         }
 
-        fun buttonFinished(username:String, password:String) {
+        fun buttonFinished(username:String) {
             val params = Bundle()
             params.putString("username", username)
             intent.putExtras(params)
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
             if (username == "aluno" && password == "impacta") {
                 Handler().postDelayed({
 
-                    buttonFinished(username, password)
+                    buttonFinished(username)
 
                 }, 1500)
 
@@ -65,6 +65,9 @@ class MainActivity : AppCompatActivity() {
                     this.recreate()
 
                 }, 1700)
+            }
+            else {
+                Toast.makeText(this, "Usuario ou senha invalido(s)", Toast.LENGTH_SHORT).show()
             }
         }
 
