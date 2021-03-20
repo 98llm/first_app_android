@@ -1782,7 +1782,6 @@ id beginning
 id blocking
 id bottom
 id bounce
-id button
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -2182,6 +2181,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_display_message
 layout activity_main
+layout activity_settings
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

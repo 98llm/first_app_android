@@ -24,6 +24,10 @@
         "source": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\AC2\\first_app_android\\first\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
+        "merged": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\AC2\\first_app_android\\first\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_settings.xml.flat",
+        "source": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\AC2\\first_app_android\\first\\app\\src\\main\\res\\layout\\activity_settings.xml"
+    },
+    {
         "merged": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\AC2\\first_app_android\\first\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\AC2\\first_app_android\\first\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
