@@ -27,7 +27,7 @@ class HomeScreen : AppCompatActivity() {
         text = username
         }
 
-        supportActionBar?.title = "Dicipl"
+        supportActionBar?.title = "Diciplinas"
 
     }
 
@@ -47,7 +47,8 @@ class HomeScreen : AppCompatActivity() {
                 this.recreate()
             }
             R.id.settings -> {
-                Toast.makeText(this, "Clicou config", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, SettingsActivity::class.java)
+                startActivity(intent)
             }
             R.id.logout -> {
                 val intent = Intent(this, MainActivity::class.java)
