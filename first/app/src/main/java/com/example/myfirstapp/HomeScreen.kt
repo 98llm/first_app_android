@@ -34,15 +34,13 @@ class HomeScreen : AppCompatActivity(),  NavigationView.OnNavigationItemSelected
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        configuraMenuLateral()
+        //configuraMenuLateral()
     }
 
     private fun configuraMenuLateral() {
         // ícone de menu (hamburger) para mostrar o menu
         var toogle = ActionBarDrawerToggle(
-                this,
-                layoutMenuLateral,
-                toolbar,
+
                 R.string.navigation_drawer_open,
                 R.string.navigation_drawer_close)
 
