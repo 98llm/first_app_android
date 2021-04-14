@@ -8,5 +8,12 @@
     <string name="settings">Configurações</string>
     <string name="logout">Sair</string>
     <string name="search">search</string>
+    <string name="left_menu_username">Nome Usuário</string>
+    <string name="left_menu_disciplinas">Disciplinas</string>
+    <string name="left_menu_forum">Forum</string>
+    <string name="location_left_menu">Localização</string>
 
+
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
 </resources>

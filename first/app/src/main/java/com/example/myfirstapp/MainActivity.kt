@@ -1,5 +1,6 @@
 package com.example.myfirstapp
 
+import android.app.AlertDialog
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
@@ -7,19 +8,24 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.View
 import android.util.Log
+import android.view.MenuItem
 import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
 import kotlinx.android.synthetic.main.activity_main.*
 
 
 
+
+
 const val EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE"
 
-class MainActivity : AppCompatActivity() {
+@Suppress("DEPRECATION")
+class MainActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -62,7 +68,6 @@ class MainActivity : AppCompatActivity() {
 
                 Handler().postDelayed({
 
-                    this.recreate()
 
                 }, 1700)
             }
@@ -72,5 +77,16 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-}
 
+    override fun onResume() {
+        super.onResume()
+        val layout = findViewById<ConstraintLayout>(R.id.constraint_layout_login)
+        val textView = findViewById<TextView>(R.id.textView)
+
+
+        layout.setBackgroundResource(R.drawable.button_login)
+        textView.text = "Login"
+    }
+
+
+}
