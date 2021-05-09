@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\ACANDROID\\first_app_android\\first_app_android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-et\\values-et.xml",
+            "outputFile": "D:\\Users\\Leandro\\Documents\\facul\\4_Sem\\ACANDROID\\first_app_android\\first_app_android\\first\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-et\\values-et.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Leandro\\.gradle\\caches\\transforms-2\\files-2.1\\1d7f194c3b514d29aaff300f282f5328\\core-1.0.2\\res\\values-et\\values-et.xml",
