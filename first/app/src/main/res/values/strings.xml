@@ -1,12 +1,13 @@
 <resources>
-    <string name="app_name">My First App</string>
-    <string name="edit_user">Usuario</string>
-    <string name="button_send">Send</string>
-    <string name="edit_password">Senha</string>
-    <string name="edit_button">Login</string>
-    <string name="classroom_img">imagem sala</string>
-    <string name="settings">Configurações</string>
-    <string name="logout">Sair</string>
-    <string name="search">search</string>
+    <string name="app_name">My_first_app</string>
+    <string name="mensagem_login">Faça seu Login</string>
 
+    <string name="action_buscar">Buscar</string>
+    <string name="action_atualizar">Atualizar</string>
+    <string name="action_adicionar">Adicionar</string>
+    <string name="action_config">Configurações</string>
+    <string name="action_remover">Remover</string>
+
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
 </resources>

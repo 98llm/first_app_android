@@ -1,2 +1,9 @@
-com/example/myfirstapp/BuildConfig.java
- com.example.myfirstapp.BuildConfig
+br/com/fernandosousa/lmsapp/BuildConfig.java
+ br.com.fernandosousa.lmsapp.BuildConfig
+br/com/fernandosousa/lmsapp/DisciplinaDAO_Impl.java
+ br.com.fernandosousa.lmsapp.DisciplinaDAO_Impl
+ br.com.fernandosousa.lmsapp.DisciplinaDAO_Impl$1
+ br.com.fernandosousa.lmsapp.DisciplinaDAO_Impl$2
+br/com/fernandosousa/lmsapp/LMSDatabase_Impl.java
+ br.com.fernandosousa.lmsapp.LMSDatabase_Impl
+ br.com.fernandosousa.lmsapp.LMSDatabase_Impl$1
