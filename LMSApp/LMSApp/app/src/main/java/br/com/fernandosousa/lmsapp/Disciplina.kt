@@ -1,0 +1,23 @@
+package br.com.fernandosousa.lmsapp
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+import com.google.gson.GsonBuilder
+import java.io.Serializable
+
+@Entity(tableName = "disciplina")
+class Disciplina: Serializable {
+
+    @PrimaryKey
+    var id: Long? = null
+    var nome = ""
+    var ementa = ""
+    var foto = ""
+    var professor = ""
+
+    fun toJson(): String {
+        return GsonBuilder().create().toJson(this)
+    }
+
+
+}
