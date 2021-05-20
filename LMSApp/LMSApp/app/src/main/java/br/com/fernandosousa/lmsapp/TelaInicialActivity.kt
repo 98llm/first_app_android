@@ -26,8 +26,9 @@ class TelaInicialActivity : DebugActivity(), NavigationView.OnNavigationItemSele
 
         var params = intent.extras
         val nome = params?.getString("nome")
-        Toast.makeText(this, "Nome do usuário $nome", Toast.LENGTH_LONG).show()
         var numero = params?.getInt("numero")
+
+        Toast.makeText(this, "Nome do usuário $nome", Toast.LENGTH_LONG).show()
 
         val nomeShared = Prefs.getString("nomedousuario")
         Toast.makeText(this, "Valor em SharedPreferences: $nomeShared", Toast.LENGTH_SHORT).show()

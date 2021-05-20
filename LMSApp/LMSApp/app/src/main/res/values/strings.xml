@@ -9,4 +9,5 @@
     <string name="nav_open">Abrir</string>
     <string name="nav_close">Fechar</string>
     <string name="action_disciplina">Nova Disciplina</string>
+    <string name="form_login">Login</string>
 </resources>

@@ -28,41 +28,37 @@ class MainActivity : DebugActivity() {
 
         val context: Context = this
         botao_login.setOnClickListener {
-            progress_login.visibility = View.VISIBLE
-            Handler(Looper.getMainLooper()).postDelayed(object : Runnable {
-                override fun run() {
-                    val nome_usuario = campo_usuario.text.toString()
-                    val senha = campo_senha.text.toString()
-                    val check_login = checkLogin.isChecked
+            Handler(Looper.getMainLooper()).postDelayed({
+                val nome_usuario = campo_usuario.text.toString()
+                val senha = campo_senha.text.toString()
+                val check_login = checkLogin.isChecked
+
+                botao_login.setText("")
+                progress_login.visibility = View.VISIBLE
+
+                if (validate_login(nome_usuario,senha)){
 
                     if (check_login) {
                         Prefs.setString("nome_usuario", nome_usuario)
                         Prefs.setString("senha", senha)
-                    }
-                    else {
+                    } else {
                         Prefs.setString("nome_usuario", "")
                         Prefs.setString("senha", "")
                     }
                     Prefs.setBoolean("check_login", check_login)
 
-
                     val intent = Intent(context, TelaInicialActivity::class.java)
                     val params = Bundle()
                     params.putString("nome", nome_usuario)
-                    params.putInt("numero", 10)
-                    var array: ArrayList<Int> = ArrayList<Int>()
-                    array.add(10)
-                    array.add(20)
-                    params.putIntegerArrayList("array_numeros", array)
 
                     intent.putExtras(params)
-                    intent.putExtra("outro_paramentro", true)
 
                     startActivity(intent)
                 }
-            }, 3000)
+            }, 2000)
             Toast.makeText(this, "Clicou no botão de login", Toast.LENGTH_SHORT).show()
             // qualquer outra coisa que o evento de clique deve executar
+
         }
 
 
@@ -70,8 +66,17 @@ class MainActivity : DebugActivity() {
 
     }
 
+    fun validate_login(usuario:String, senha:String):Boolean{
+        if ((usuario == "aluno") && (senha == "impacta")){
+            return true
+        }else{
+            return false
+        }
+    }
+
     override fun onResume() {
         super.onResume()
+        botao_login.setText("Login")
         progress_login.visibility = View.GONE
     }
 
