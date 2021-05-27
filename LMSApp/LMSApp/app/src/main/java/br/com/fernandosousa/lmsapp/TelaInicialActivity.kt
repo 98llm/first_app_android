@@ -43,15 +43,16 @@ class TelaInicialActivity : DebugActivity(), NavigationView.OnNavigationItemSele
         recycler_disciplinas?.layoutManager = LinearLayoutManager(this)
 
     }
-    private var disciplinas = listOf<Disciplina>()
+    private var disciplinas_ws = listOf<Disciplina>()
+    //private var disciplinas_DB = listOf<Disciplina>()
 
     override fun onResume() {
         super.onResume()
         Thread {
-            disciplinas = DisciplinaService.getDisciplinasDB()
+            disciplinas_ws = DisciplinaService.getDisciplinas()
 
             runOnUiThread {
-                recycler_disciplinas?.adapter = DisciplinaAdapter(disciplinas) {
+                recycler_disciplinas?.adapter = DisciplinaAdapter(disciplinas_ws) {
                     onClickDisciplina(it)
                 }
             }
@@ -59,8 +60,6 @@ class TelaInicialActivity : DebugActivity(), NavigationView.OnNavigationItemSele
     }
 
     fun onClickDisciplina(disciplina: Disciplina) {
-
-
         val intent = Intent(this, DetalheDisciplinaActivity::class.java)
 
         intent.putExtra("disciplina", disciplina)

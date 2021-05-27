@@ -12,7 +12,6 @@ object DisciplinaService {
 
     fun getDisciplinas(): List<Disciplina> {
 
-
         val url = "$host/disciplinas"
         val json = HttpHelper.get(url)
 

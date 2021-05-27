@@ -17,4 +17,8 @@ object DatabaseManager {
     fun getDisciplinaDAO(): DisciplinaDAO {
         return dbInstance.disciplinaDAO()
     }
+
+    fun getUsuarioDAO(): UsuarioDAO{
+        return dbInstance.usuarioDAO()
+    }
 }
