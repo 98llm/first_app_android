@@ -2,11 +2,9 @@ package br.com.fernandosousa.lmsapp
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
@@ -26,7 +24,7 @@ class TelaInicialActivity : DebugActivity(), NavigationView.OnNavigationItemSele
 
         var params = intent.extras
         val nome = params?.getString("nome")
-        var numero = params?.getInt("numero")
+
 
         Toast.makeText(this, "Nome do usuário $nome", Toast.LENGTH_LONG).show()
 
@@ -55,6 +53,11 @@ class TelaInicialActivity : DebugActivity(), NavigationView.OnNavigationItemSele
                 recycler_disciplinas?.adapter = DisciplinaAdapter(disciplinas_ws) {
                     onClickDisciplina(it)
                 }
+
+                val intent = Intent(this, DetalheDisciplinaActivity::class.java)
+                intent.putExtra("disciplina", this.disciplinas_ws.get(0))
+
+                NotificationUtil.create(1, intent, "Atenção", "Atenção a nova atividade na ${this.disciplinas_ws.get(0).nome}")
             }
         }.start()
     }
