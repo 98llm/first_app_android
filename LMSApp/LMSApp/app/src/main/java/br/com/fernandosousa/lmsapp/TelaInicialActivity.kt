@@ -46,6 +46,12 @@ class TelaInicialActivity : DebugActivity(), NavigationView.OnNavigationItemSele
 
     override fun onResume() {
         super.onResume()
+
+        val intent = Intent(this, DetalheDisciplinaActivity::class.java)
+        intent.putExtra("disciplina", this.disciplinas_ws.get(0))
+
+        NotificationUtil.create(1, intent, "Atenção", "Atenção a nova atividade na ${this.disciplinas_ws.get(0).nome}")
+
         Thread {
             disciplinas_ws = DisciplinaService.getDisciplinas()
 
@@ -54,10 +60,7 @@ class TelaInicialActivity : DebugActivity(), NavigationView.OnNavigationItemSele
                     onClickDisciplina(it)
                 }
 
-                val intent = Intent(this, DetalheDisciplinaActivity::class.java)
-                intent.putExtra("disciplina", this.disciplinas_ws.get(0))
 
-                NotificationUtil.create(1, intent, "Atenção", "Atenção a nova atividade na ${this.disciplinas_ws.get(0).nome}")
             }
         }.start()
     }
