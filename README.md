@@ -5,6 +5,8 @@ Esse app foi desenvolvido em aula e tem como objetivo aprimorar meus conheciment
 ## Considerações
 Todos os testes foram realizados com as seguintes ADV's settings:
 
+|  Settings        |  Description       |
+| ---------------- | ------------------ |
 |  Name            |  Pixel_2_XL_API_28 |
 |  CPU/ABI         |  Google APIs Intel Atom (x86) |
 |  Target          |  google_apis [Google APIs] (API level 28) |
