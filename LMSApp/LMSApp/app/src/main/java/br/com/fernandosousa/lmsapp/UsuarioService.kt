@@ -23,9 +23,7 @@ object UsuarioService {
     }
 
     fun getUsuarios(nome: String):Usuarios? {
-
         val url = "$host/usuarios/$nome"
-
         val json = HttpHelper.get(url)
 
         Log.d(TAG, json)
