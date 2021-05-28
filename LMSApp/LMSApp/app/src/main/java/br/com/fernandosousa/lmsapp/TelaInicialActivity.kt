@@ -28,8 +28,8 @@ class TelaInicialActivity : DebugActivity(), NavigationView.OnNavigationItemSele
 
         Toast.makeText(this, "Nome do usuário $nome", Toast.LENGTH_LONG).show()
 
-        val nomeShared = Prefs.getString("nomedousuario")
-        Toast.makeText(this, "Valor em SharedPreferences: $nomeShared", Toast.LENGTH_SHORT).show()
+        val nomeShared = Prefs.getString("nome_usuario")
+        Toast.makeText(this, "Bem vindo: $nomeShared", Toast.LENGTH_SHORT).show()
 
         setSupportActionBar(toolbar)
 
@@ -108,6 +108,12 @@ class TelaInicialActivity : DebugActivity(), NavigationView.OnNavigationItemSele
                 val intent = Intent(this, ForumActivity::class.java)
                 startActivity(intent)
                 //Toast.makeText(this, "Clicou em forum", Toast.LENGTH_LONG).show()
+            }
+            R.id.nav_localizacao ->{
+
+                val intent = Intent(this, LocationActivity::class.java)
+                startActivity(intent)
+
             }
         }
         layout_menu_lateral.closeDrawer(GravityCompat.START)
