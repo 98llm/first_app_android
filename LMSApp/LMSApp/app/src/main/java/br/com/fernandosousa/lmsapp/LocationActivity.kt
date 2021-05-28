@@ -21,5 +21,13 @@ class LocationActivity :  DebugActivity() {
 
     }
 
+    override fun onResume() {
+        super.onResume()
+        val mapaFragment = MapaFragment()
+        supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.layoutMapas, mapaFragment)
+                .commit()
 
+    }
 }
