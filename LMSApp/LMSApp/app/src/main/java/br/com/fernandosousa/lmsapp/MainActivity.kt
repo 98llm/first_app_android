@@ -2,6 +2,7 @@
 
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -38,6 +39,7 @@ class MainActivity : DebugActivity() {
 
                 botao_login.setText("")
                 progress_login.visibility = View.VISIBLE
+                botao_login.setBackgroundColor(Color.parseColor("#6AE16C"))
 
                 Thread {
 
@@ -84,6 +86,7 @@ class MainActivity : DebugActivity() {
 }    override fun onResume() {
         super.onResume()
         botao_login.setText("Login")
+        botao_login.setBackgroundColor(Color.parseColor("#FF9800"))
         progress_login.visibility = View.GONE
     }
 }
